@@ -9,7 +9,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+<<<<<<< HEAD
           <h1 className="App-title">kocak</h1>
+=======
+          <h1 className="App-title">Welcome to React Course</h1>
+>>>>>>> origin/frontend-1-head
         </header>
         <p className="App-intro">
           <MyForm />
