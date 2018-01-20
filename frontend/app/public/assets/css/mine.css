@@ -1,0 +1,8 @@
+body {
+  background-color: rgb(37, 217, 201) !important;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  color: white !important;
+  color: rgb(255, 255, 255) !important;
+}

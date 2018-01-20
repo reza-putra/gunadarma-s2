@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(37, 217, 201) !important;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li {
+  color: white !important;
+}
+
+ul li {
+  list-style: none !important;
+  font-style: none !important;
+}
