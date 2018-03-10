@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-//import MyForm from "./Components/Form/MyForm.js";
+import MyForm from "./Components/Form/MyForm.js";
 import MyKonten from "./Components/Profil/Profil.js"
 import "./mine.css";
+import ApiCall2 from "./Components/Profil/ApiCall2.js"
+import ApiCall from "./Components/Profil/ApiCall.js"
 
 class App extends Component {
   render() {
@@ -15,7 +17,7 @@ class App extends Component {
       //     <MyForm />
       //   </p>
       // </div>
-      <MyKonten />
+       <MyKonten />
     );
   }
 }
