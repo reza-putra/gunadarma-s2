@@ -4,7 +4,13 @@ const logic = function() {};
 
 const MyInput = props => (
   <div>
-    <input placeholder={props.label} type={props.type} name={props.name} />
+    <input
+      placeholder={props.label}
+      type={props.type}
+      name={props.name}
+      value={props.value}
+      onChange={e => props.onChange(e, props.name)}
+    />
     <br />
   </div>
 );
