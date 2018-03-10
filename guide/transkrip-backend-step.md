@@ -8,16 +8,21 @@
 
 #### Setup server backend dengan sinatra
 
+* `mkdir backend` // membuat folder baru dengan nama backend
+* `cd backend` // masuk ke dir backend
 * `gem install bundler` //akan mengintall gem bundler untuk vendoring
-* pada folder backend, dan buat file dengan nama server.r b lalu tuliskan code dibawah ini.
+* pada folder backend, dan buat file dengan nama server.rb lalu tuliskan code dibawah ini.
 
 ```ruby
 require 'sinatra'
 
 get '/' do
-  'Hello world!'
+ return 'Hello world!'
 end
 ```
 
+* `bundler init`
+* `bundler add sinatra`
+* `bundler install` 
 * `ruby server.rb` // ruby akan mengexecute file server.rb dan menjalankan server pada port :4567
 * buka browser dan arahkan url ke `localhost:4567` // kalian akan mendapatkan response dari server yaitu text `Hello world`
