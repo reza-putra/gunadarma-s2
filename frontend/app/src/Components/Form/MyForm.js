@@ -4,7 +4,12 @@ import MyInput from "./MyInput";
 
 class MyForm extends Component {
   state = {
-    username: { name: "name", type: "text", label: "nama", value: "" },
+    username: {
+      name: "name",
+      type: "text",
+      label: "nama",
+      value: ""
+    },
     password: {
       name: "password",
       type: "password",
@@ -14,7 +19,6 @@ class MyForm extends Component {
   };
 
   handleOnSubmit(e) {
-    e.preventDefault();
     axios
       .post("/login", {
         username: this.state.username.value,
@@ -43,9 +47,11 @@ class MyForm extends Component {
   }
 
   render() {
+    // melakukan extract object key username dan password
     const { username, password } = this.state;
     return (
       <form>
+        {/*input untuk username */}
         <MyInput
           key={username.name}
           name={username.name}
@@ -54,6 +60,8 @@ class MyForm extends Component {
           value={username.value}
           onChange={event => this.handleChange(event, username.name)}
         />
+
+        {/*input untuk password */}
         <MyInput
           key={password.name}
           name={password.name}
@@ -62,8 +70,9 @@ class MyForm extends Component {
           value={password.value}
           onChange={event => this.handleChange(event, password.name)}
         />
-        <button type="button" onClick={e => this.handleOnSubmit(e)}>
-          Submit{" "}
+        <button type="button"
+          onClick={event => this.handleOnSubmit(event)}>
+          Submit
         </button>
       </form>
     );
