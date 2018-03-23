@@ -9,7 +9,7 @@ const MyInput = props => (
       type={props.type}
       name={props.name}
       value={props.value}
-      onChange={e => props.onChange(e, props.name)}
+      onChange={e => props.onChange(e, props.pos)}
     />
     <br />
   </div>
