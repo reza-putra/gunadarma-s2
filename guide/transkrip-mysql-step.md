@@ -21,10 +21,10 @@ login ke mysql shell dengan perintah
 penjelasan: perintahkan mysql untuk login kedalam shell dengan user "root" menggunakan password
 ```
 membuat database dengan nama gunadarma
-* `create database gunadarma`
+* `create database gunadarma;`
 
 gunakan database yang telah kita buat 
-* `use gunadarma`
+* `use gunadarma;`
 
 lihat database yang sedang kita gunakan
 * `SELECT DATABASE();`
