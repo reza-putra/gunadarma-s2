@@ -113,6 +113,7 @@ Pindah ke directory backend dengan menjalankan perintah
 
 Install mysql library agar ruby dapat terhubung ke mysql
 - `gem install mysql2`
+- pada windows `gem install mysql2 --platform=ruby -- '--with-mysql-dir="C:\mysql-connector"'`
 
 Pull code dari github repo
 - `git pull origin backend-mysql`
