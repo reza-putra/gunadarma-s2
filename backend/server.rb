@@ -3,6 +3,7 @@ require 'json'
 require 'pry'
 require './database'
 
+
 set :sessions, true
 
 get '/' do
