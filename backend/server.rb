@@ -1,16 +1,15 @@
 require 'sinatra'
 require 'json'
 require 'pry'
-require './database'
+require './data-dummy'
 
 
 set :sessions, true
 
 get '/' do
   model = Database.new
-  mahasiswa = model.fetchAll()
-
-  return 200, mahasiswa
+  mahasiswa = model.findByID(1)
+  return 200, mahasiswa.to_json
 end
 
 post '/insert' do
