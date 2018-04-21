@@ -12,6 +12,16 @@ header{
  padding: 0 15px;
 }
 
+header .logo {
+  background-image: url(./logo.png);
+  background-size: cover;
+  width: 178px;
+  height: 87px;
+  display: block;
+  text-indent: -999;
+  background-position-y: -26px;
+}
+
 #slideshow{
   width: 100%;
   height: 300px;
@@ -31,4 +41,10 @@ header{
   float: right;
   width: 49.5%;
   height: 50%;
+}
+#search{
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #999;
 }
