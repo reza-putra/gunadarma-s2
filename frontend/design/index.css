@@ -1,3 +1,7 @@
+p {
+  font-size: 14px;
+  
+}
 body{
   background: #8ac38a;
   margin: 0;
@@ -12,6 +16,13 @@ header{
  padding: 0 15px;
 }
 
+footer{
+  padding: 20px;
+  background-color: paleturquoise;
+  min-height: 200px;
+  text-align: center;
+}
+
 header .logo {
   background-image: url(./logo.png);
   background-size: cover;
@@ -21,7 +32,23 @@ header .logo {
   text-indent: -999;
   background-position-y: -26px;
 }
-
+.logo{
+  background-color: blue
+}
+.logo{
+  background-color: red
+}
+.logo-paijo{
+  background-color: rebeccapurple;
+}
+.twitter{
+  background-image: url(./twitter.jpg);
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
 #slideshow{
   width: 100%;
   height: 300px;
